@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorteador de números</title>
+  </head>
+  <body>
+    <h1>Sorteador de números</h1>
+    <h2>Quero sortear:</h2>
+    <p>
+      Defina o intervalo e a quantidade de números, clique em "Sortear" e veja
+      os resultados na tela. É rápido e fácil!
+    </p>
+
+    <form action="">
+      <label for="number">Números</label>
+      <input type="number" name="number" id="number" />
+
+      <label for="from">De</label>
+      <input type="number" name="from" id="from" />
+
+      <label for="to">Até</label>
+      <input type="number" name="to" id="to" />
+
+      <input
+        type="checkbox"
+        name="permission_to_repeat"
+        id="permission_to_repeat"
+      />
+      <label for="permission_to_repeat">Não repetir número</label>
+    </form>
+    <button id="draw">SORTEAR</button>
+    <div class="showResult"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
