@@ -22,4 +22,20 @@
   --accent-green: #77C0A;
   --accent-lime: #d1dc97;
   --accent-red: #e9a9b3;
+
+  --ff-sora: "Sora", sans-serif;
+  --ff-roboto: "Roboto Mono", monospace;
+  --ff-roboto-flex: "Roboto Flex", sans-serif;
+
+  --display-lg: 800 4.5rem/130% var(var(--ff-sora));
+  --display-md: 800 2.5rem/130% var(var(--ff-sora));
+  --display-sm: 700 2rem/130% var(var(--ff-sora));
+
+  --overline: 700 1rem/150% var(var(--ff-roboto));
+
+  --p-lg: 500 1rem/150% var(var(--ff-roboto-flex));
+  --p-md: 500 0.875rem/150% var(var(--ff-roboto-flex));
+  --p-sm: 500 0.75rem/150% var(var(--ff-roboto-flex));
+  --label-md: 700 1.25rem/150% var(var(--ff-roboto-flex));
+  --label-md: 700 1rem/150% var(var(--ff-roboto-flex));
 }
