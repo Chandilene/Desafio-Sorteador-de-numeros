@@ -1,0 +1,20 @@
+.info-section {
+  margin-top: 4.9375rem;
+}
+
+.info-item {
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.question_and_answer h3 {
+  color: var(--content-brand);
+  font: var(--p-md);
+}
+.question_and_answer p {
+  color: var(--content-secondary);
+  font: var(--p-sm);
+}

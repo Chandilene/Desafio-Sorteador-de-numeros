@@ -14,32 +14,85 @@
     />
   </head>
   <body>
-    <h1>Sorteador de números</h1>
-    <h2>Quero sortear:</h2>
-    <p>
-      Defina o intervalo e a quantidade de números, clique em "Sortear" e veja
-      os resultados na tela. É rápido e fácil!
-    </p>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="" />
+          <span class="span-logo">Numbers</span>
+        </div>
+        <p>Online - gratuito</p>
+        <h1>Sorteador de números</h1>
+      </header>
+      <main>
+        <section class="intro">
+          <h2>Quero sortear:</h2>
+          <p>
+            Defina o intervalo e a quantidade de números, clique em "Sortear" e
+            veja os resultados na tela. É rápido e fácil!
+          </p>
+        </section>
 
-    <form action="">
-      <label for="number">Números</label>
-      <input type="number" name="number" id="number" />
+        <form id="draw-form">
+          <div class="input-group-wrapper">
+            <div class="input-group">
+              <label for="number">NÚMEROS</label>
+              <input type="number" name="number" id="number" placeholder="2" />
+            </div>
 
-      <label for="from">De</label>
-      <input type="number" name="from" id="from" />
+            <div class="input-group">
+              <label for="from">DE</label>
+              <input type="number" name="from" id="from" placeholder="1" />
+            </div>
 
-      <label for="to">Até</label>
-      <input type="number" name="to" id="to" />
+            <div class="input-group">
+              <label for="to">ATÉ</label>
+              <input type="number" name="to" id="to" placeholder="100" />
+            </div>
+          </div>
 
-      <input
-        type="checkbox"
-        name="noRepeatPermission"
-        id="noRepeatPermission"
-      />
-      <label for="noRepeatPermission">Não repetir número</label>
-    </form>
-    <button id="draw">SORTEAR</button>
-    <div class="showResult"></div>
+          <div class="checkbox-group">
+            <input
+              type="checkbox"
+              name="noRepeatPermission"
+              id="noRepeatPermission"
+              class="noRepeatPermission"
+              checked
+            />
+            <label for="noRepeatPermission">Não repetir número</label>
+          </div>
+
+          <button type="submit" id="draw" class="draw">
+            SORTEAR
+            <img src="./assets/arrow-right.svg" alt="" aria-hidden="true" />
+          </button>
+        </form>
+        <div class="showResult" id="showResult"></div>
+      </main>
+
+      <footer class="info-section">
+        <div class="info-item">
+          <img src="./assets/question.svg" alt="" aria-hidden="true" />
+          <div class="question_and_answer">
+            <h3>Como funciona o sorteador de números?</h3>
+            <p>
+              O sorteador utiliza um algoritmo de geração aleatória para criar
+              números dentro do intervalo especificado pelo usuário.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <img src="./assets/question.svg" alt="" aria-hidden="true" />
+          <div class="question_and_answer">
+            <h3>Posso escolher o intervalo dos números?</h3>
+            <p>
+              Sim, você pode definir os valores mínimo e máximo para o intervalo
+              dos números sorteados.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>

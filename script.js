@@ -5,7 +5,7 @@ const noRepeatPermission = document.querySelector("#noRepeatPermission");
 
 const button_draw = document.querySelector("#draw");
 
-const showResultDiv = document.querySelector(".showResult");
+const showResultDiv = document.querySelector("#showResult");
 
 /**
  *
