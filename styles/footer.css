@@ -18,3 +18,14 @@
   color: var(--content-secondary);
   font: var(--p-sm);
 }
+
+@media (width >= 48em) {
+  .info-section {
+    grid-area: footer;
+    margin-top: 2rem;
+  }
+
+  .info-item {
+    margin-bottom: 1.5rem;
+  }
+}
