@@ -1,0 +1,39 @@
+.result-container {
+  text-align: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.result-header .overline {
+  font: var(--overline);
+  color: var(--content-secondary);
+  text-transform: uppercase;
+}
+
+.result-header .label-md {
+  color: var(--content-tertiary);
+  margin-bottom: 2.5rem;
+}
+
+.numbers-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.drawn-number {
+  font: var(--display-md);
+  color: var(--accent-pink);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
