@@ -31,3 +31,20 @@ header {
     margin-bottom: 2.625rem;
   }
 }
+
+@media (width >= 48em) {
+  header {
+    grid-area: header;
+    text-align: left;
+  }
+
+  header .logo {
+    justify-content: flex-start;
+    margin-bottom: 3.5rem;
+  }
+
+  header h1 {
+    font: var(--display-lg);
+    margin-bottom: 1rem;
+  }
+}

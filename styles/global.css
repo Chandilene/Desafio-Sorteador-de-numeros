@@ -54,3 +54,16 @@ body {
 .container {
   padding: 2.75rem 2.25rem;
 }
+
+@media (width >= 48em) {
+  .container {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header main" "footer main";
+    column-gap: 5rem;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+}

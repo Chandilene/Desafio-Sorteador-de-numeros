@@ -122,3 +122,17 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (width >= 48em) {
+  main {
+    grid-area: main;
+    background-color: var(--background-secondary);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--background-gray);
+  }
+
+  .input-group-wrapper {
+    margin: 0;
+  }
+}
